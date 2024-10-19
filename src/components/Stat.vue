@@ -13,12 +13,12 @@
         return {
             value: {
                 'Retail Value': {
-                    'YTD': '1.7bn',
-                    'MTD': '7.5M'
+                    'YTD': '€ 1.7bn',
+                    'MTD': '€ 7.5M'
                 },
                 'COGS Value': {
-                    'YTD': '225.4M',
-                    'MTD': '13.6M'
+                    'YTD': '€ 225.4M',
+                    'MTD': '€ 13.6M'
                 },
                 'CO2 Emissions': {
                     'YTD': '590.1K',
@@ -29,8 +29,8 @@
                     'MTD': '5.0 %'
                 },
                 'Failed Retail Value': {
-                    'YTD': '78.1M',
-                    'MTD': '553.6K'
+                    'YTD': '€ 78.1M',
+                    'MTD': '€ 553.6K'
                 }
             }
         } 
