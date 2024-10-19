@@ -1,13 +1,15 @@
 <script>
   import  Header  from "./components/Header.vue"
+  import StatsList from "./components/StatsList.vue";
   export default {
-    components: { Header },
+    components: { Header, StatsList }
   }
 </script>
 
 <template>
   <main className="main-page">
     <Header />
+    <StatsList />
   </main>
 </template>
 

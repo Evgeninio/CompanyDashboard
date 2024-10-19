@@ -24,11 +24,13 @@
     .text-container {
         display: flex;
         justify-content: space-between;
-        padding: 25px;
         align-items: center;
         width: 80%;
-        padding: 10px 10px 10px 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: rgb(112, 72, 136);
         color: white;
+        border-radius: 5%;
     }
 </style>
