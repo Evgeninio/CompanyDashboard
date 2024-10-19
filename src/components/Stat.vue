@@ -34,13 +34,22 @@
                 }
             }
         } 
-       }
+       },
+       methods: {
+        handleMouseEnter() {
+            const textContent = this.$refs.statElement.textContent;
+            this.$emit('stat-hover', textContent)
+        },
+        handleMouseLeave() {
+            this.$emit('stat-hover', null)
+        }
+    }
     }
 </script>
 
 <template>
     <div className="stat">
-        <p class="stat-title">
+        <p class="stat-title" ref="statElement" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
             {{ content }}
         </p>
         <div className="stat-value">

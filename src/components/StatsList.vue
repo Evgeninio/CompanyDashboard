@@ -7,14 +7,13 @@
             return {
                 statsTitles: ['Retail Value', 'COGS Value',  'CO2 Emissions', 'Fail Rate', 'Failed Retail Value'],
                 isVisible: false,
+                title: ''
             }
         },
         methods: {
-        handleMouse(visible) {
-            this.isVisible = visible;
-        },
-        handleTitle(e) {
-            console.log(e)
+        handleStatHover(textContent) {
+            this.title = textContent
+            this.isVisible = !!textContent
         }
     }
     }
@@ -22,10 +21,10 @@
 
 <template>
     <div className="stats-list">
-        <Stat v-for="(title, index) in statsTitles" :content="title" :index="index" @mouseenter="handleMouse(true)" @mouseleave="handleMouse(false)"/>
+        <Stat v-for="(title, index) in statsTitles" :content="title" :index="index" @stat-hover="handleStatHover" />
     </div>
     <div>
-        <StatInfo :visible="isVisible"/>
+        <StatInfo :visible="isVisible" :content="title"/>
     </div>
 </template>
 
