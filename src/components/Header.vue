@@ -35,10 +35,10 @@
         font-weight: 1000;
         font-size: 24px;
         letter-spacing: 1px;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     .header-buttons {
-        min-width: 40%;
+        min-width: 50%;
         display: flex;
         gap: 10px; 
         justify-content: center;
