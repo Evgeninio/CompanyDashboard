@@ -22,9 +22,10 @@
 <template>
     <div className="stats-list">
         <Stat v-for="(title, index) in statsTitles" :content="title" :index="index" @stat-hover="handleStatHover" />
+        <StatInfo :visible="isVisible" :content="title"/>
     </div>
     <div>
-        <StatInfo :visible="isVisible" :content="title"/>
+
     </div>
 </template>
 
@@ -36,5 +37,26 @@
         margin-left: 20px;
         margin-right: 20px;
         justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1 1 13%;
+    }
+
+    @media screen and (width >=1251px) and (width <=1500px) { 
+        .stat{
+            flex: 1 1 30%;
+        }
+        
+    }
+
+    @media screen and (width >=830px) and (width <=1250px){ 
+        .stats-list{
+            justify-content: center;
+            flex: 1 1 45%;
+        }
+    }
+    @media screen and (width <=829px){ 
+        .stats-list {
+            flex-direction: column;
+        }
     }
 </style>

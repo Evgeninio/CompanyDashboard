@@ -15,7 +15,7 @@
 
 <style scoped>
   .main-page {
-    height: 1024px;
+    height: 2000px;
     background-color: rgb(53, 2, 79);
   }
 </style>

@@ -39,7 +39,6 @@
         margin: 5px;
         display: flex;
         justify-content: center;
-
     }
     .stat-info__visible {
         visibility: visible;

@@ -38,11 +38,27 @@
         padding-left: 10px;
     }
     .header-buttons {
-        min-width: 50%;
+        min-width: 60%;
         display: flex;
         gap: 10px; 
         justify-content: center;
         padding: 20px;
         background-color: rgb(53, 2, 79);
+    }
+    @media screen and (width >=655px) and (width <=1100px){ 
+        .header {
+            flex-direction: column;
+        }
+        .header-buttons {
+            flex: 1 1 calc(50% - 10px);
+        }
+    }
+    @media screen and (width <=655px){ 
+        .header {
+            flex-direction: column;
+        }
+        .header-buttons {
+            flex-direction: column;
+        }
     }
 </style>

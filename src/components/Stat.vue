@@ -90,4 +90,25 @@
         width: 80%;
         padding-bottom: 10px;
     }
+
+    @media screen and (width >=1251px) and (width <=1500px) { 
+        .stat{
+            width: 13%;
+        }
+        
+    }
+
+    @media screen and (width >=830px) and (width <=1250px){ 
+        .stat{
+            width: 45%;
+        }
+        
+    }
+
+    @media screen and (width <=829px){ 
+        .stat {
+            width: 100%;
+            
+        }
+    }
 </style>
